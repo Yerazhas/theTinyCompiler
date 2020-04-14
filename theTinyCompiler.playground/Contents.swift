@@ -3,7 +3,7 @@ import Foundation
 // MARK: - String Extension -
 
 
-func tokenizer(_ input: String) -> [Token] {
+func tokenize(_ input: String) -> [Token] {
     var currentIndex = 0
     var tokens = [Token]()
     
@@ -79,4 +79,4 @@ func tokenizer(_ input: String) -> [Token] {
 }
 
 let code = "(add 123 456)"
-print(tokenizer(code))
+print(tokenize(code))
